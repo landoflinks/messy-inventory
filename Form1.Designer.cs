@@ -1,6 +1,6 @@
 ﻿namespace messy_inventory
 {
-    partial class Form1
+    partial class frmInventory
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.appTitle = new System.Windows.Forms.Label();
-            this.btn_show_inventory = new System.Windows.Forms.Button();
+            this.cmdShowInventory = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // appTitle
@@ -42,24 +42,25 @@
             this.appTitle.TabIndex = 0;
             this.appTitle.Text = "Messy\'s Used Games";
             // 
-            // btn_show_inventory
+            // cmdShowInventory
             // 
-            this.btn_show_inventory.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_show_inventory.Location = new System.Drawing.Point(264, 67);
-            this.btn_show_inventory.Name = "btn_show_inventory";
-            this.btn_show_inventory.Size = new System.Drawing.Size(151, 34);
-            this.btn_show_inventory.TabIndex = 1;
-            this.btn_show_inventory.Text = "Current Inventory";
-            this.btn_show_inventory.UseVisualStyleBackColor = true;
+            this.cmdShowInventory.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdShowInventory.Location = new System.Drawing.Point(264, 67);
+            this.cmdShowInventory.Name = "cmdShowInventory";
+            this.cmdShowInventory.Size = new System.Drawing.Size(151, 34);
+            this.cmdShowInventory.TabIndex = 1;
+            this.cmdShowInventory.Text = "Current Inventory";
+            this.cmdShowInventory.UseVisualStyleBackColor = true;
+            this.cmdShowInventory.Click += new System.EventHandler(this.cmdShowInventory_Click);
             // 
-            // Form1
+            // frmInventory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(740, 481);
-            this.Controls.Add(this.btn_show_inventory);
+            this.Controls.Add(this.cmdShowInventory);
             this.Controls.Add(this.appTitle);
-            this.Name = "Form1";
+            this.Name = "frmInventory";
             this.Text = "Inventory App";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -69,7 +70,7 @@
         #endregion
 
         private System.Windows.Forms.Label appTitle;
-        private System.Windows.Forms.Button btn_show_inventory;
+        private System.Windows.Forms.Button cmdShowInventory;
     }
 }
 

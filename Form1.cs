@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace messy_inventory
 {
-    public partial class Form1 : Form
+    public partial class frmInventory : Form
     {
-        public Form1()
+        public frmInventory()
         {
             InitializeComponent();
+        }
+
+        private void cmdShowInventory_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("This button currently does nothing.");
         }
     }
 }
