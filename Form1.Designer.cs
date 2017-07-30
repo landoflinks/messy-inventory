@@ -28,19 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.appTitle = new System.Windows.Forms.Label();
+            this.lblTitle = new System.Windows.Forms.Label();
             this.cmdShowInventory = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // appTitle
+            // lblTitle
             // 
-            this.appTitle.AutoSize = true;
-            this.appTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.appTitle.Location = new System.Drawing.Point(240, 9);
-            this.appTitle.Name = "appTitle";
-            this.appTitle.Size = new System.Drawing.Size(224, 26);
-            this.appTitle.TabIndex = 0;
-            this.appTitle.Text = "Messy\'s Used Games";
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Location = new System.Drawing.Point(240, 9);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(224, 26);
+            this.lblTitle.TabIndex = 0;
+            this.lblTitle.Text = "Messy\'s Used Games";
             // 
             // cmdShowInventory
             // 
@@ -59,9 +59,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(740, 481);
             this.Controls.Add(this.cmdShowInventory);
-            this.Controls.Add(this.appTitle);
+            this.Controls.Add(this.lblTitle);
             this.Name = "frmInventory";
-            this.Text = "Inventory App";
+            this.Text = "Inventory Application";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -69,7 +69,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label appTitle;
+        private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Button cmdShowInventory;
     }
 }
