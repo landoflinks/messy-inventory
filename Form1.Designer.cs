@@ -45,11 +45,11 @@
             // cmdShowInventory
             // 
             this.cmdShowInventory.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdShowInventory.Location = new System.Drawing.Point(264, 67);
+            this.cmdShowInventory.Location = new System.Drawing.Point(247, 67);
             this.cmdShowInventory.Name = "cmdShowInventory";
-            this.cmdShowInventory.Size = new System.Drawing.Size(151, 34);
+            this.cmdShowInventory.Size = new System.Drawing.Size(209, 34);
             this.cmdShowInventory.TabIndex = 1;
-            this.cmdShowInventory.Text = "Current Inventory";
+            this.cmdShowInventory.Text = "Show Current Inventory";
             this.cmdShowInventory.UseVisualStyleBackColor = true;
             this.cmdShowInventory.Click += new System.EventHandler(this.cmdShowInventory_Click);
             // 
