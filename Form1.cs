@@ -19,7 +19,7 @@ namespace messy_inventory
 
         private void cmdShowInventory_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("This button currently does nothing.");
+            MessageBox.Show("This button currently does nothing.", "Test Message");
         }
     }
 }
