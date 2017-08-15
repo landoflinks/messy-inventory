@@ -32,4 +32,15 @@ public class GameData
         condition = gameCondition;
         price = gamePrice;
     }
+
+    public GameData(string gameTitle, string gameConsole, string gameDev, string gamePublisher,
+        string gameCondition, float gamePrice)
+    {
+        title = gameTitle;
+        console = gameConsole;
+        developer = gameDev;
+        publisher = gamePublisher;
+        condition = gameCondition;
+        price = gamePrice;
+    }
 }
