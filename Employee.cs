@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace messy_inventory
 {
-    class Employee
+    public class Employee
     {
+        private int employeeNum;
+        private string first;
+        private string last;
+        private string birthday;
+        private string position;
+        private string specialty;
+        private bool active;
     }
 }
