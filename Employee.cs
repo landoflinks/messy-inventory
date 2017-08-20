@@ -15,5 +15,42 @@ namespace messy_inventory
         private string position;
         private string specialty;
         private bool active;
+
+        public Employee()
+        {
+            employeeNum = 0;
+            first = "";
+            last = "";
+            birthday = "";
+            position = "Clerk";
+            specialty = "";
+            active = true;
+        }
+
+        public Employee(string firstName, string lastName, string dayOfBirth)
+        {
+            first = firstName;
+            last = lastName;
+            birthday = dayOfBirth;
+        }
+
+        public Employee(string firstName, string lastName, string dayOfBirth, string expert)
+        {
+            first = firstName;
+            last = lastName;
+            birthday = dayOfBirth;
+            specialty = expert;
+        }
+
+        public Employee(int employeeId, string firstName, string lastName,
+            string dayOfBirth, string startPosition, string expert)
+        {
+            employeeNum = employeeId;
+            first = firstName;
+            last = lastName;
+            birthday = dayOfBirth;
+            position = startPosition;
+            specialty = expert;
+        }
     }
 }
