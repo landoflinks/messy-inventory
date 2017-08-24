@@ -29,7 +29,9 @@
         private void InitializeComponent()
         {
             this.lblTitle = new System.Windows.Forms.Label();
-            this.cmdShowInventory = new System.Windows.Forms.Button();
+            this.CmdShowInventory = new System.Windows.Forms.Button();
+            this.CmdAddGame = new System.Windows.Forms.Button();
+            this.CmdAddEmployee = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblTitle
@@ -42,23 +44,45 @@
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "Messy\'s Used Games";
             // 
-            // cmdShowInventory
+            // CmdShowInventory
             // 
-            this.cmdShowInventory.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdShowInventory.Location = new System.Drawing.Point(245, 67);
-            this.cmdShowInventory.Name = "cmdShowInventory";
-            this.cmdShowInventory.Size = new System.Drawing.Size(209, 34);
-            this.cmdShowInventory.TabIndex = 1;
-            this.cmdShowInventory.Text = "Show Current Inventory";
-            this.cmdShowInventory.UseVisualStyleBackColor = true;
-            this.cmdShowInventory.Click += new System.EventHandler(this.cmdShowInventory_Click);
+            this.CmdShowInventory.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CmdShowInventory.Location = new System.Drawing.Point(462, 67);
+            this.CmdShowInventory.Name = "CmdShowInventory";
+            this.CmdShowInventory.Size = new System.Drawing.Size(209, 34);
+            this.CmdShowInventory.TabIndex = 1;
+            this.CmdShowInventory.Text = "Show Current Inventory";
+            this.CmdShowInventory.UseVisualStyleBackColor = true;
+            this.CmdShowInventory.Click += new System.EventHandler(this.cmdShowInventory_Click);
+            // 
+            // CmdAddGame
+            // 
+            this.CmdAddGame.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.CmdAddGame.Location = new System.Drawing.Point(12, 67);
+            this.CmdAddGame.Name = "CmdAddGame";
+            this.CmdAddGame.Size = new System.Drawing.Size(131, 34);
+            this.CmdAddGame.TabIndex = 2;
+            this.CmdAddGame.Text = "Add Game";
+            this.CmdAddGame.UseVisualStyleBackColor = true;
+            // 
+            // CmdAddEmployee
+            // 
+            this.CmdAddEmployee.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.CmdAddEmployee.Location = new System.Drawing.Point(184, 67);
+            this.CmdAddEmployee.Name = "CmdAddEmployee";
+            this.CmdAddEmployee.Size = new System.Drawing.Size(131, 34);
+            this.CmdAddEmployee.TabIndex = 3;
+            this.CmdAddEmployee.Text = "Add Employee";
+            this.CmdAddEmployee.UseVisualStyleBackColor = true;
             // 
             // frmInventory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(740, 481);
-            this.Controls.Add(this.cmdShowInventory);
+            this.Controls.Add(this.CmdAddEmployee);
+            this.Controls.Add(this.CmdAddGame);
+            this.Controls.Add(this.CmdShowInventory);
             this.Controls.Add(this.lblTitle);
             this.Name = "frmInventory";
             this.Text = "Inventory Application";
@@ -70,7 +94,9 @@
         #endregion
 
         private System.Windows.Forms.Label lblTitle;
-        private System.Windows.Forms.Button cmdShowInventory;
+        private System.Windows.Forms.Button CmdShowInventory;
+        private System.Windows.Forms.Button CmdAddGame;
+        private System.Windows.Forms.Button CmdAddEmployee;
     }
 }
 
