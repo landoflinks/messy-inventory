@@ -17,9 +17,20 @@ namespace messy_inventory
             InitializeComponent();
         }
 
-        private void cmdShowInventory_Click(object sender, EventArgs e)
+        private void CmdShowInventory_Click(object sender, EventArgs e)
         {
             MessageBox.Show("This button currently does nothing.", "Test Message");
+        }
+
+        private void CmdAddEmployee_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CmdAddGame_Click(object sender, EventArgs e)
+        {
+            AddGame newGame = new AddGame();
+            newGame.Show();
         }
     }
 }

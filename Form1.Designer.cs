@@ -53,7 +53,7 @@
             this.CmdShowInventory.TabIndex = 1;
             this.CmdShowInventory.Text = "Show Current Inventory";
             this.CmdShowInventory.UseVisualStyleBackColor = true;
-            this.CmdShowInventory.Click += new System.EventHandler(this.cmdShowInventory_Click);
+            this.CmdShowInventory.Click += new System.EventHandler(this.CmdShowInventory_Click);
             // 
             // CmdAddGame
             // 
@@ -64,6 +64,7 @@
             this.CmdAddGame.TabIndex = 2;
             this.CmdAddGame.Text = "Add Game";
             this.CmdAddGame.UseVisualStyleBackColor = true;
+            this.CmdAddGame.Click += new System.EventHandler(this.CmdAddGame_Click);
             // 
             // CmdAddEmployee
             // 
@@ -74,6 +75,7 @@
             this.CmdAddEmployee.TabIndex = 3;
             this.CmdAddEmployee.Text = "Add Employee";
             this.CmdAddEmployee.UseVisualStyleBackColor = true;
+            this.CmdAddEmployee.Click += new System.EventHandler(this.CmdAddEmployee_Click);
             // 
             // frmInventory
             // 
