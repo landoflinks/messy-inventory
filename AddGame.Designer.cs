@@ -40,6 +40,8 @@
             this.TxtPublisher = new System.Windows.Forms.TextBox();
             this.TxtPrice = new System.Windows.Forms.TextBox();
             this.CmbCondition = new System.Windows.Forms.ComboBox();
+            this.CmbSubmit = new System.Windows.Forms.Button();
+            this.CmbCancel = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LblTitle
@@ -159,11 +161,34 @@
             this.CmbCondition.Size = new System.Drawing.Size(219, 24);
             this.CmbCondition.TabIndex = 11;
             // 
+            // CmbSubmit
+            // 
+            this.CmbSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.CmbSubmit.Location = new System.Drawing.Point(89, 238);
+            this.CmbSubmit.Name = "CmbSubmit";
+            this.CmbSubmit.Size = new System.Drawing.Size(82, 30);
+            this.CmbSubmit.TabIndex = 12;
+            this.CmbSubmit.Text = "Submit";
+            this.CmbSubmit.UseVisualStyleBackColor = true;
+            this.CmbSubmit.Click += new System.EventHandler(this.CmbSubmit_Click);
+            // 
+            // CmbCancel
+            // 
+            this.CmbCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.CmbCancel.Location = new System.Drawing.Point(305, 238);
+            this.CmbCancel.Name = "CmbCancel";
+            this.CmbCancel.Size = new System.Drawing.Size(82, 30);
+            this.CmbCancel.TabIndex = 13;
+            this.CmbCancel.Text = "Cancel";
+            this.CmbCancel.UseVisualStyleBackColor = true;
+            // 
             // AddGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(505, 262);
+            this.ClientSize = new System.Drawing.Size(505, 280);
+            this.Controls.Add(this.CmbCancel);
+            this.Controls.Add(this.CmbSubmit);
             this.Controls.Add(this.CmbCondition);
             this.Controls.Add(this.TxtPrice);
             this.Controls.Add(this.TxtPublisher);
@@ -197,5 +222,7 @@
         private System.Windows.Forms.TextBox TxtPublisher;
         private System.Windows.Forms.TextBox TxtPrice;
         private System.Windows.Forms.ComboBox CmbCondition;
+        private System.Windows.Forms.Button CmbSubmit;
+        private System.Windows.Forms.Button CmbCancel;
     }
 }

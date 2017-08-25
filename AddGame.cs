@@ -16,5 +16,10 @@ namespace messy_inventory
         {
             InitializeComponent();
         }
+
+        private void CmbSubmit_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
