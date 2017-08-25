@@ -181,6 +181,7 @@
             this.CmbCancel.TabIndex = 13;
             this.CmbCancel.Text = "Cancel";
             this.CmbCancel.UseVisualStyleBackColor = true;
+            this.CmbCancel.Click += new System.EventHandler(this.CmbCancel_Click);
             // 
             // AddGame
             // 

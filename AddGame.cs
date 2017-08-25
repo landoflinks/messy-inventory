@@ -19,7 +19,12 @@ namespace messy_inventory
 
         private void CmbSubmit_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("This button will submit the data.", "Test");
+        }
 
+        private void CmbCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
