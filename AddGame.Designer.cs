@@ -34,13 +34,19 @@
             this.LblPublisher = new System.Windows.Forms.Label();
             this.lblCondition = new System.Windows.Forms.Label();
             this.LblPrice = new System.Windows.Forms.Label();
+            this.TxtTitle = new System.Windows.Forms.TextBox();
+            this.txtConsole = new System.Windows.Forms.TextBox();
+            this.TxtDeveloper = new System.Windows.Forms.TextBox();
+            this.TxtPublisher = new System.Windows.Forms.TextBox();
+            this.TxtPrice = new System.Windows.Forms.TextBox();
+            this.CmbCondition = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // LblTitle
             // 
             this.LblTitle.AutoSize = true;
             this.LblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.LblTitle.Location = new System.Drawing.Point(12, 9);
+            this.LblTitle.Location = new System.Drawing.Point(44, 9);
             this.LblTitle.Name = "LblTitle";
             this.LblTitle.Size = new System.Drawing.Size(39, 17);
             this.LblTitle.TabIndex = 0;
@@ -50,7 +56,7 @@
             // 
             this.LblConsole.AutoSize = true;
             this.LblConsole.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.LblConsole.Location = new System.Drawing.Point(12, 42);
+            this.LblConsole.Location = new System.Drawing.Point(20, 42);
             this.LblConsole.Name = "LblConsole";
             this.LblConsole.Size = new System.Drawing.Size(63, 17);
             this.LblConsole.TabIndex = 1;
@@ -60,7 +66,7 @@
             // 
             this.LblDeveloper.AutoSize = true;
             this.LblDeveloper.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.LblDeveloper.Location = new System.Drawing.Point(12, 77);
+            this.LblDeveloper.Location = new System.Drawing.Point(6, 76);
             this.LblDeveloper.Name = "LblDeveloper";
             this.LblDeveloper.Size = new System.Drawing.Size(77, 17);
             this.LblDeveloper.TabIndex = 2;
@@ -90,17 +96,80 @@
             // 
             this.LblPrice.AutoSize = true;
             this.LblPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.LblPrice.Location = new System.Drawing.Point(12, 193);
+            this.LblPrice.Location = new System.Drawing.Point(39, 194);
             this.LblPrice.Name = "LblPrice";
             this.LblPrice.Size = new System.Drawing.Size(44, 17);
             this.LblPrice.TabIndex = 5;
             this.LblPrice.Text = "Price:";
+            // 
+            // TxtTitle
+            // 
+            this.TxtTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.TxtTitle.Location = new System.Drawing.Point(89, 6);
+            this.TxtTitle.Name = "TxtTitle";
+            this.TxtTitle.Size = new System.Drawing.Size(219, 23);
+            this.TxtTitle.TabIndex = 6;
+            // 
+            // txtConsole
+            // 
+            this.txtConsole.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.txtConsole.Location = new System.Drawing.Point(89, 39);
+            this.txtConsole.Name = "txtConsole";
+            this.txtConsole.Size = new System.Drawing.Size(219, 23);
+            this.txtConsole.TabIndex = 7;
+            // 
+            // TxtDeveloper
+            // 
+            this.TxtDeveloper.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.TxtDeveloper.Location = new System.Drawing.Point(89, 73);
+            this.TxtDeveloper.Name = "TxtDeveloper";
+            this.TxtDeveloper.Size = new System.Drawing.Size(219, 23);
+            this.TxtDeveloper.TabIndex = 8;
+            // 
+            // TxtPublisher
+            // 
+            this.TxtPublisher.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.TxtPublisher.Location = new System.Drawing.Point(89, 110);
+            this.TxtPublisher.Name = "TxtPublisher";
+            this.TxtPublisher.Size = new System.Drawing.Size(219, 23);
+            this.TxtPublisher.TabIndex = 9;
+            // 
+            // TxtPrice
+            // 
+            this.TxtPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.TxtPrice.Location = new System.Drawing.Point(89, 191);
+            this.TxtPrice.Name = "TxtPrice";
+            this.TxtPrice.Size = new System.Drawing.Size(219, 23);
+            this.TxtPrice.TabIndex = 10;
+            // 
+            // CmbCondition
+            // 
+            this.CmbCondition.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.CmbCondition.FormattingEnabled = true;
+            this.CmbCondition.Items.AddRange(new object[] {
+            "Like New",
+            "Great",
+            "Good",
+            "Average",
+            "Below Average",
+            "Poor",
+            "Pitch This Thing"});
+            this.CmbCondition.Location = new System.Drawing.Point(89, 152);
+            this.CmbCondition.Name = "CmbCondition";
+            this.CmbCondition.Size = new System.Drawing.Size(219, 24);
+            this.CmbCondition.TabIndex = 11;
             // 
             // AddGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(505, 262);
+            this.Controls.Add(this.CmbCondition);
+            this.Controls.Add(this.TxtPrice);
+            this.Controls.Add(this.TxtPublisher);
+            this.Controls.Add(this.TxtDeveloper);
+            this.Controls.Add(this.txtConsole);
+            this.Controls.Add(this.TxtTitle);
             this.Controls.Add(this.LblPrice);
             this.Controls.Add(this.lblCondition);
             this.Controls.Add(this.LblPublisher);
@@ -122,5 +191,11 @@
         private System.Windows.Forms.Label LblPublisher;
         private System.Windows.Forms.Label lblCondition;
         private System.Windows.Forms.Label LblPrice;
+        private System.Windows.Forms.TextBox TxtTitle;
+        private System.Windows.Forms.TextBox txtConsole;
+        private System.Windows.Forms.TextBox TxtDeveloper;
+        private System.Windows.Forms.TextBox TxtPublisher;
+        private System.Windows.Forms.TextBox TxtPrice;
+        private System.Windows.Forms.ComboBox CmbCondition;
     }
 }
