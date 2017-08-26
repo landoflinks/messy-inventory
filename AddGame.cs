@@ -59,7 +59,9 @@ namespace messy_inventory
                 GameData newGame = new GameData(title, console, developer, publisher, condition, price);
             }
 
-            
+            MessageBox.Show("Title: " + title + " Console: " + console +
+               " Developer: " + developer + " Publisher: " + publisher +
+               " Condition: " + condition + " Price: " + Convert.ToString(price), "Test");
         }
 
         private void CmbCancel_Click(object sender, EventArgs e)
