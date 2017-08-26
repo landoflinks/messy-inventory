@@ -35,7 +35,7 @@
             this.lblCondition = new System.Windows.Forms.Label();
             this.LblPrice = new System.Windows.Forms.Label();
             this.TxtTitle = new System.Windows.Forms.TextBox();
-            this.txtConsole = new System.Windows.Forms.TextBox();
+            this.TxtConsole = new System.Windows.Forms.TextBox();
             this.TxtDeveloper = new System.Windows.Forms.TextBox();
             this.TxtPublisher = new System.Windows.Forms.TextBox();
             this.TxtPrice = new System.Windows.Forms.TextBox();
@@ -112,13 +112,13 @@
             this.TxtTitle.Size = new System.Drawing.Size(219, 23);
             this.TxtTitle.TabIndex = 6;
             // 
-            // txtConsole
+            // TxtConsole
             // 
-            this.txtConsole.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.txtConsole.Location = new System.Drawing.Point(89, 39);
-            this.txtConsole.Name = "txtConsole";
-            this.txtConsole.Size = new System.Drawing.Size(219, 23);
-            this.txtConsole.TabIndex = 7;
+            this.TxtConsole.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.TxtConsole.Location = new System.Drawing.Point(89, 39);
+            this.TxtConsole.Name = "TxtConsole";
+            this.TxtConsole.Size = new System.Drawing.Size(219, 23);
+            this.TxtConsole.TabIndex = 7;
             // 
             // TxtDeveloper
             // 
@@ -194,7 +194,7 @@
             this.Controls.Add(this.TxtPrice);
             this.Controls.Add(this.TxtPublisher);
             this.Controls.Add(this.TxtDeveloper);
-            this.Controls.Add(this.txtConsole);
+            this.Controls.Add(this.TxtConsole);
             this.Controls.Add(this.TxtTitle);
             this.Controls.Add(this.LblPrice);
             this.Controls.Add(this.lblCondition);
@@ -218,7 +218,7 @@
         private System.Windows.Forms.Label lblCondition;
         private System.Windows.Forms.Label LblPrice;
         private System.Windows.Forms.TextBox TxtTitle;
-        private System.Windows.Forms.TextBox txtConsole;
+        private System.Windows.Forms.TextBox TxtConsole;
         private System.Windows.Forms.TextBox TxtDeveloper;
         private System.Windows.Forms.TextBox TxtPublisher;
         private System.Windows.Forms.TextBox TxtPrice;

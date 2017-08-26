@@ -19,7 +19,32 @@ namespace messy_inventory
 
         private void CmbSubmit_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("This button will submit the data.", "Test");
+            string title;
+            string console;
+            string developer;
+            string publisher;
+            string condition;
+            float price;
+
+            title = TxtTitle.Text;
+            console = TxtConsole.Text;
+            developer = TxtDeveloper.Text;
+            publisher = TxtPublisher.Text;
+            condition = CmbCondition.Text;
+            //price = Convert.ToInt32(TxtPrice.Text);
+
+            if (title == "")
+            {
+                MessageBox.Show("You must enter a title!", "Error", MessageBoxButtons.OK,
+                                   MessageBoxIcon.Stop);
+                return;
+            }
+            if (console == "")
+            {
+                MessageBox.Show("You must enter a game console!", "Error", MessageBoxButtons.OK,
+                                   MessageBoxIcon.Stop);
+                return;
+            }
         }
 
         private void CmbCancel_Click(object sender, EventArgs e)
