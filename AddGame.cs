@@ -31,7 +31,7 @@ namespace messy_inventory
             developer = TxtDeveloper.Text;
             publisher = TxtPublisher.Text;
             condition = CmbCondition.Text;
-            //price = Convert.ToInt32(TxtPrice.Text);
+            price = (float)Convert.ToInt32(TxtPrice.Text);
 
             if (title == "")
             {
@@ -45,6 +45,21 @@ namespace messy_inventory
                                    MessageBoxIcon.Stop);
                 return;
             }
+
+            if (developer == "" && publisher == "" && condition == "")
+            {
+                GameData newGame = new GameData(title, console);
+            }
+            else if (developer == "" && publisher == "")
+            {
+                GameData newGame = new GameData(title, console, condition, price);
+            }
+            else
+            {
+                GameData newGame = new GameData(title, console, developer, publisher, condition, price);
+            }
+
+            
         }
 
         private void CmbCancel_Click(object sender, EventArgs e)
