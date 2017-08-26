@@ -31,7 +31,7 @@ namespace messy_inventory
             developer = TxtDeveloper.Text;
             publisher = TxtPublisher.Text;
             condition = CmbCondition.Text;
-            price = (float)Convert.ToInt32(TxtPrice.Text);
+            price = float.Parse(TxtPrice.Text);
 
             if (title == "")
             {
@@ -61,7 +61,7 @@ namespace messy_inventory
 
             MessageBox.Show("Title: " + title + " Console: " + console +
                " Developer: " + developer + " Publisher: " + publisher +
-               " Condition: " + condition + " Price: " + Convert.ToString(price), "Test");
+               " Condition: " + condition + " Price: " + Convert.ToString(price), "Test Submit");
         }
 
         private void CmbCancel_Click(object sender, EventArgs e)
