@@ -24,7 +24,7 @@ namespace messy_inventory
 
         private void CmdAddEmployee_Click(object sender, EventArgs e)
         {
-
+            // New Employee window opens here.
         }
 
         private void CmdAddGame_Click(object sender, EventArgs e)

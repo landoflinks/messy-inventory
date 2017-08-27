@@ -33,6 +33,7 @@ namespace messy_inventory
             condition = CmbCondition.Text;
             price = float.Parse(TxtPrice.Text);
 
+            // Testing for required variables.
             if (title == "")
             {
                 MessageBox.Show("You must enter a title!", "Error", MessageBoxButtons.OK,
@@ -46,7 +47,8 @@ namespace messy_inventory
                 return;
             }
 
-            if (developer == "" && publisher == "" && condition == "")
+            // Logic to determine which class object to use. Will need revising.
+            if (developer == "" && publisher == "" && condition == "" && price == 0.00F)
             {
                 GameData newGame = new GameData(title, console);
             }
