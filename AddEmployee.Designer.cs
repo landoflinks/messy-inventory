@@ -35,6 +35,8 @@
             this.LblPosition = new System.Windows.Forms.Label();
             this.LblSpecialty = new System.Windows.Forms.Label();
             this.LblActive = new System.Windows.Forms.Label();
+            this.CmbCancel = new System.Windows.Forms.Button();
+            this.CmbSubmit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LblEmployeeNum
@@ -114,11 +116,34 @@
             this.LblActive.Text = "Active:";
             this.LblActive.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
+            // CmbCancel
+            // 
+            this.CmbCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.CmbCancel.Location = new System.Drawing.Point(312, 262);
+            this.CmbCancel.Name = "CmbCancel";
+            this.CmbCancel.Size = new System.Drawing.Size(82, 30);
+            this.CmbCancel.TabIndex = 15;
+            this.CmbCancel.Text = "Cancel";
+            this.CmbCancel.UseVisualStyleBackColor = true;
+            this.CmbCancel.Click += new System.EventHandler(this.CmbCancel_Click);
+            // 
+            // CmbSubmit
+            // 
+            this.CmbSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.CmbSubmit.Location = new System.Drawing.Point(96, 262);
+            this.CmbSubmit.Name = "CmbSubmit";
+            this.CmbSubmit.Size = new System.Drawing.Size(82, 30);
+            this.CmbSubmit.TabIndex = 14;
+            this.CmbSubmit.Text = "Submit";
+            this.CmbSubmit.UseVisualStyleBackColor = true;
+            // 
             // AddEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(484, 304);
+            this.Controls.Add(this.CmbCancel);
+            this.Controls.Add(this.CmbSubmit);
             this.Controls.Add(this.LblActive);
             this.Controls.Add(this.LblSpecialty);
             this.Controls.Add(this.LblPosition);
@@ -142,5 +167,7 @@
         private System.Windows.Forms.Label LblPosition;
         private System.Windows.Forms.Label LblSpecialty;
         private System.Windows.Forms.Label LblActive;
+        private System.Windows.Forms.Button CmbCancel;
+        private System.Windows.Forms.Button CmbSubmit;
     }
 }
