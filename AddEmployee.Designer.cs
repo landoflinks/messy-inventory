@@ -37,6 +37,13 @@
             this.LblActive = new System.Windows.Forms.Label();
             this.CmbCancel = new System.Windows.Forms.Button();
             this.CmbSubmit = new System.Windows.Forms.Button();
+            this.TxtEmployeeNum = new System.Windows.Forms.TextBox();
+            this.TxtFirstName = new System.Windows.Forms.TextBox();
+            this.TxtLastName = new System.Windows.Forms.TextBox();
+            this.TxtBirthday = new System.Windows.Forms.TextBox();
+            this.TxtSpecialty = new System.Windows.Forms.TextBox();
+            this.ChkActive = new System.Windows.Forms.CheckBox();
+            this.CmbPosition = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // LblEmployeeNum
@@ -119,7 +126,7 @@
             // CmbCancel
             // 
             this.CmbCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.CmbCancel.Location = new System.Drawing.Point(312, 262);
+            this.CmbCancel.Location = new System.Drawing.Point(312, 247);
             this.CmbCancel.Name = "CmbCancel";
             this.CmbCancel.Size = new System.Drawing.Size(82, 30);
             this.CmbCancel.TabIndex = 15;
@@ -130,7 +137,7 @@
             // CmbSubmit
             // 
             this.CmbSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.CmbSubmit.Location = new System.Drawing.Point(96, 262);
+            this.CmbSubmit.Location = new System.Drawing.Point(96, 247);
             this.CmbSubmit.Name = "CmbSubmit";
             this.CmbSubmit.Size = new System.Drawing.Size(82, 30);
             this.CmbSubmit.TabIndex = 14;
@@ -138,11 +145,82 @@
             this.CmbSubmit.UseVisualStyleBackColor = true;
             this.CmbSubmit.Click += new System.EventHandler(this.CmbSubmit_Click);
             // 
+            // TxtEmployeeNum
+            // 
+            this.TxtEmployeeNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.TxtEmployeeNum.Location = new System.Drawing.Point(104, 6);
+            this.TxtEmployeeNum.Name = "TxtEmployeeNum";
+            this.TxtEmployeeNum.Size = new System.Drawing.Size(219, 23);
+            this.TxtEmployeeNum.TabIndex = 16;
+            // 
+            // TxtFirstName
+            // 
+            this.TxtFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.TxtFirstName.Location = new System.Drawing.Point(104, 40);
+            this.TxtFirstName.Name = "TxtFirstName";
+            this.TxtFirstName.Size = new System.Drawing.Size(219, 23);
+            this.TxtFirstName.TabIndex = 17;
+            // 
+            // TxtLastName
+            // 
+            this.TxtLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.TxtLastName.Location = new System.Drawing.Point(104, 74);
+            this.TxtLastName.Name = "TxtLastName";
+            this.TxtLastName.Size = new System.Drawing.Size(219, 23);
+            this.TxtLastName.TabIndex = 18;
+            // 
+            // TxtBirthday
+            // 
+            this.TxtBirthday.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.TxtBirthday.Location = new System.Drawing.Point(104, 106);
+            this.TxtBirthday.Name = "TxtBirthday";
+            this.TxtBirthday.Size = new System.Drawing.Size(219, 23);
+            this.TxtBirthday.TabIndex = 19;
+            this.TxtBirthday.Text = "01/01/17";
+            // 
+            // TxtSpecialty
+            // 
+            this.TxtSpecialty.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.TxtSpecialty.Location = new System.Drawing.Point(104, 173);
+            this.TxtSpecialty.Name = "TxtSpecialty";
+            this.TxtSpecialty.Size = new System.Drawing.Size(219, 23);
+            this.TxtSpecialty.TabIndex = 20;
+            // 
+            // ChkActive
+            // 
+            this.ChkActive.AutoSize = true;
+            this.ChkActive.Location = new System.Drawing.Point(104, 216);
+            this.ChkActive.Name = "ChkActive";
+            this.ChkActive.Size = new System.Drawing.Size(15, 14);
+            this.ChkActive.TabIndex = 21;
+            this.ChkActive.UseVisualStyleBackColor = true;
+            // 
+            // CmbPosition
+            // 
+            this.CmbPosition.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.CmbPosition.FormattingEnabled = true;
+            this.CmbPosition.Items.AddRange(new object[] {
+            "Clerk",
+            "Shift Lead",
+            "Manager",
+            "Owner"});
+            this.CmbPosition.Location = new System.Drawing.Point(104, 137);
+            this.CmbPosition.Name = "CmbPosition";
+            this.CmbPosition.Size = new System.Drawing.Size(219, 24);
+            this.CmbPosition.TabIndex = 22;
+            // 
             // AddEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(484, 304);
+            this.ClientSize = new System.Drawing.Size(484, 288);
+            this.Controls.Add(this.CmbPosition);
+            this.Controls.Add(this.ChkActive);
+            this.Controls.Add(this.TxtSpecialty);
+            this.Controls.Add(this.TxtBirthday);
+            this.Controls.Add(this.TxtLastName);
+            this.Controls.Add(this.TxtFirstName);
+            this.Controls.Add(this.TxtEmployeeNum);
             this.Controls.Add(this.CmbCancel);
             this.Controls.Add(this.CmbSubmit);
             this.Controls.Add(this.LblActive);
@@ -170,5 +248,12 @@
         private System.Windows.Forms.Label LblActive;
         private System.Windows.Forms.Button CmbCancel;
         private System.Windows.Forms.Button CmbSubmit;
+        private System.Windows.Forms.TextBox TxtEmployeeNum;
+        private System.Windows.Forms.TextBox TxtFirstName;
+        private System.Windows.Forms.TextBox TxtLastName;
+        private System.Windows.Forms.TextBox TxtBirthday;
+        private System.Windows.Forms.TextBox TxtSpecialty;
+        private System.Windows.Forms.CheckBox ChkActive;
+        private System.Windows.Forms.ComboBox CmbPosition;
     }
 }
