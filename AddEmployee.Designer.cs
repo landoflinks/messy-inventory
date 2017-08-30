@@ -136,6 +136,7 @@
             this.CmbSubmit.TabIndex = 14;
             this.CmbSubmit.Text = "Submit";
             this.CmbSubmit.UseVisualStyleBackColor = true;
+            this.CmbSubmit.Click += new System.EventHandler(this.CmbSubmit_Click);
             // 
             // AddEmployee
             // 
