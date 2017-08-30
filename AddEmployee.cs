@@ -19,7 +19,7 @@ namespace messy_inventory
 
         private void CmbCancel_Click(object sender, EventArgs e)
         {
-            
+            Close();
         }
     }
 }
