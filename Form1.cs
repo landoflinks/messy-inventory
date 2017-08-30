@@ -19,12 +19,13 @@ namespace messy_inventory
 
         private void CmdShowInventory_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("This button currently does nothing.", "Test Message");
+            MessageBox.Show("This button currently does nothing of use.", "Test Message");
         }
 
         private void CmdAddEmployee_Click(object sender, EventArgs e)
         {
-            // New Employee window opens here.
+            AddEmployee newEmployee = new AddEmployee();
+            newEmployee.Show();
         }
 
         private void CmdAddGame_Click(object sender, EventArgs e)
