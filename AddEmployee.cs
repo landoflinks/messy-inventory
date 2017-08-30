@@ -24,7 +24,21 @@ namespace messy_inventory
 
         private void CmbSubmit_Click(object sender, EventArgs e)
         {
+            int employeeNum;
+            string firstName;
+            string lastName;
+            string birthday;
+            string position;
+            string specialty;
+            bool active;
 
+            employeeNum = Convert.ToInt32(TxtEmployeeNum.Text);
+            firstName = TxtFirstName.Text;
+            lastName = TxtLastName.Text;
+            birthday = TxtBirthday.Text;
+            position = CmbPosition.Text;
+            specialty = TxtSpecialty.Text;
+            active = ChkActive.Checked;
         }
     }
 }
