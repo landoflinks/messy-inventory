@@ -67,6 +67,7 @@ namespace messy_inventory
                 if (msgReply == DialogResult.Yes)
                 {
                     ChkActive.Checked = true;
+                    active = ChkActive.Checked;
                 }
             }
 
