@@ -22,6 +22,11 @@ namespace messy_inventory
             MessageBox.Show("This button currently does nothing of use.", "Test Message");
         }
 
+        private void CmbEmployeeList_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("This button currently lists nothing.", "Another Test Message");
+        }
+
         private void CmdAddEmployee_Click(object sender, EventArgs e)
         {
             AddEmployee newEmployee = new AddEmployee();

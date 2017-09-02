@@ -32,6 +32,7 @@
             this.CmdShowInventory = new System.Windows.Forms.Button();
             this.CmdAddGame = new System.Windows.Forms.Button();
             this.CmdAddEmployee = new System.Windows.Forms.Button();
+            this.CmdEmployeeList = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblTitle
@@ -47,7 +48,7 @@
             // CmdShowInventory
             // 
             this.CmdShowInventory.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CmdShowInventory.Location = new System.Drawing.Point(462, 67);
+            this.CmdShowInventory.Location = new System.Drawing.Point(338, 67);
             this.CmdShowInventory.Name = "CmdShowInventory";
             this.CmdShowInventory.Size = new System.Drawing.Size(209, 34);
             this.CmdShowInventory.TabIndex = 1;
@@ -77,11 +78,23 @@
             this.CmdAddEmployee.UseVisualStyleBackColor = true;
             this.CmdAddEmployee.Click += new System.EventHandler(this.CmdAddEmployee_Click);
             // 
+            // CmdEmployeeList
+            // 
+            this.CmdEmployeeList.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CmdEmployeeList.Location = new System.Drawing.Point(568, 67);
+            this.CmdEmployeeList.Name = "CmdEmployeeList";
+            this.CmdEmployeeList.Size = new System.Drawing.Size(144, 34);
+            this.CmdEmployeeList.TabIndex = 4;
+            this.CmdEmployeeList.Text = "Employee List";
+            this.CmdEmployeeList.UseVisualStyleBackColor = true;
+            this.CmdEmployeeList.Click += new System.EventHandler(this.CmbEmployeeList_Click);
+            // 
             // frmInventory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(740, 481);
+            this.Controls.Add(this.CmdEmployeeList);
             this.Controls.Add(this.CmdAddEmployee);
             this.Controls.Add(this.CmdAddGame);
             this.Controls.Add(this.CmdShowInventory);
@@ -99,6 +112,7 @@
         private System.Windows.Forms.Button CmdShowInventory;
         private System.Windows.Forms.Button CmdAddGame;
         private System.Windows.Forms.Button CmdAddEmployee;
+        private System.Windows.Forms.Button CmdEmployeeList;
     }
 }
 
