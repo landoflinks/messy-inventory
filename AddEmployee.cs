@@ -74,9 +74,9 @@ namespace messy_inventory
                 Employee newEmployee = new Employee(employeeNum, first, last, birthday, position, specialty);
             }
 
-            /* MessageBox.Show("Title: " + title + " Console: " + console +
-               " Developer: " + developer + " Publisher: " + publisher +
-               " Condition: " + condition + " Price: " + Convert.ToString(price), "Test Submit"); */
+            MessageBox.Show("Employee #: " + Convert.ToString(employeeNum) + " First Name: " + first +
+               " Last Name: " + last + " Birthday: " + birthday +
+               " Position: " + position + " Specialty: " + specialty + " Active: " + active, "Test Submit");
         }
     }
     }
