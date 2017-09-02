@@ -107,9 +107,9 @@
             this.LblSpecialty.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.LblSpecialty.Location = new System.Drawing.Point(29, 176);
             this.LblSpecialty.Name = "LblSpecialty";
-            this.LblSpecialty.Size = new System.Drawing.Size(69, 17);
+            this.LblSpecialty.Size = new System.Drawing.Size(70, 17);
             this.LblSpecialty.TabIndex = 5;
-            this.LblSpecialty.Text = "Specialty:";
+            this.LblSpecialty.Text = "Expertise:";
             this.LblSpecialty.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // LblActive
