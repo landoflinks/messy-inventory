@@ -59,6 +59,25 @@ namespace messy_inventory
                                    MessageBoxIcon.Stop);
                 return;
             }
+
+            // Logic to determine which class object to use. Will need revising.
+            if (employeeNum == 0 && position == "" && specialty == "")
+            {
+                Employee newEmployee = new Employee(first, last, birthday);
+            }
+            else if (employeeNum == 0 && position == "")
+            {
+                Employee newEmployee = new Employee(first, last, birthday, specialty);
+            }
+            else
+            {
+                Employee newEmployee = new Employee(employeeNum, first, last, birthday, position, specialty);
+            }
+
+            /* MessageBox.Show("Title: " + title + " Console: " + console +
+               " Developer: " + developer + " Publisher: " + publisher +
+               " Condition: " + condition + " Price: " + Convert.ToString(price), "Test Submit"); */
         }
+    }
     }
 }
