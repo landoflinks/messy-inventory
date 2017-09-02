@@ -42,11 +42,11 @@ namespace messy_inventory
 
             // Checking for required fields.
             if (first == "")
-                {
-                    MessageBox.Show("You must enter a first name for this employee!", "Error", MessageBoxButtons.OK,
-                                       MessageBoxIcon.Stop);
-                    return;
-                }
+            {
+                MessageBox.Show("You must enter a first name for this employee!", "Error", MessageBoxButtons.OK,
+                                    MessageBoxIcon.Stop);
+                return;
+            }
             if (last == "")
             {
                 MessageBox.Show("You must enter a last name for this employee!", "Error", MessageBoxButtons.OK,
@@ -60,7 +60,7 @@ namespace messy_inventory
                 return;
             }
 
-            // Logic to determine which class object to use. Will need revising.
+            // Logic to determine which class object to use. Will also need revising.
             if (employeeNum == 0 && position == "" && specialty == "")
             {
                 Employee newEmployee = new Employee(first, last, birthday);
