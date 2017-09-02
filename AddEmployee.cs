@@ -61,10 +61,10 @@ namespace messy_inventory
             }
             if (active == false)
             {
-                DialogResult dialogResult = MessageBox.Show("This employee has not been marked active! Should they be?",
+                DialogResult msgReply = MessageBox.Show("This employee has not been marked active! Should they be?",
                     "Error", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
 
-                if (dialogResult == DialogResult.Yes)
+                if (msgReply == DialogResult.Yes)
                 {
                     return;
                 }
