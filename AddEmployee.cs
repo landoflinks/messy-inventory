@@ -79,5 +79,4 @@ namespace messy_inventory
                " Position: " + position + " Specialty: " + specialty + " Active: " + active, "Test Submit");
         }
     }
-    }
 }
