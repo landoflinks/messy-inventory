@@ -59,6 +59,16 @@ namespace messy_inventory
                                    MessageBoxIcon.Stop);
                 return;
             }
+            if (active == false)
+            {
+                DialogResult dialogResult = MessageBox.Show("This employee has not been marked active! Should they be?",
+                    "Error", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+
+                if (dialogResult == DialogResult.Yes)
+                {
+                    return;
+                }
+            }
 
             // Logic to determine which class object to use. Will also need revising.
             if (employeeNum == 0 && position == "" && specialty == "")
