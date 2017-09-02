@@ -32,7 +32,7 @@ namespace messy_inventory
             string specialty;
             bool active;
 
-            employeeNum = Convert.ToInt32(TxtEmployeeNum.Text);
+            employeeNum = int.Parse(TxtEmployeeNum.Text);
             first = TxtFirstName.Text;
             last = TxtLastName.Text;
             birthday = TxtBirthday.Text;
