@@ -33,6 +33,9 @@
             this.CmdAddGame = new System.Windows.Forms.Button();
             this.CmdAddEmployee = new System.Windows.Forms.Button();
             this.CmdEmployeeList = new System.Windows.Forms.Button();
+            this.lblEditDescr = new System.Windows.Forms.Label();
+            this.DgvInventory = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvInventory)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTitle
@@ -70,7 +73,7 @@
             // CmdAddEmployee
             // 
             this.CmdAddEmployee.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.CmdAddEmployee.Location = new System.Drawing.Point(184, 67);
+            this.CmdAddEmployee.Location = new System.Drawing.Point(166, 67);
             this.CmdAddEmployee.Name = "CmdAddEmployee";
             this.CmdAddEmployee.Size = new System.Drawing.Size(131, 34);
             this.CmdAddEmployee.TabIndex = 3;
@@ -89,11 +92,31 @@
             this.CmdEmployeeList.UseVisualStyleBackColor = true;
             this.CmdEmployeeList.Click += new System.EventHandler(this.CmbEmployeeList_Click);
             // 
+            // lblEditDescr
+            // 
+            this.lblEditDescr.AutoSize = true;
+            this.lblEditDescr.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblEditDescr.Location = new System.Drawing.Point(15, 116);
+            this.lblEditDescr.Name = "lblEditDescr";
+            this.lblEditDescr.Size = new System.Drawing.Size(128, 17);
+            this.lblEditDescr.TabIndex = 5;
+            this.lblEditDescr.Text = "Double-click to edit";
+            // 
+            // DgvInventory
+            // 
+            this.DgvInventory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DgvInventory.Location = new System.Drawing.Point(12, 136);
+            this.DgvInventory.Name = "DgvInventory";
+            this.DgvInventory.Size = new System.Drawing.Size(716, 333);
+            this.DgvInventory.TabIndex = 6;
+            // 
             // frmInventory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(740, 481);
+            this.Controls.Add(this.DgvInventory);
+            this.Controls.Add(this.lblEditDescr);
             this.Controls.Add(this.CmdEmployeeList);
             this.Controls.Add(this.CmdAddEmployee);
             this.Controls.Add(this.CmdAddGame);
@@ -101,6 +124,7 @@
             this.Controls.Add(this.lblTitle);
             this.Name = "frmInventory";
             this.Text = "Inventory Application";
+            ((System.ComponentModel.ISupportInitialize)(this.DgvInventory)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -113,6 +137,8 @@
         private System.Windows.Forms.Button CmdAddGame;
         private System.Windows.Forms.Button CmdAddEmployee;
         private System.Windows.Forms.Button CmdEmployeeList;
+        private System.Windows.Forms.Label lblEditDescr;
+        private System.Windows.Forms.DataGridView DgvInventory;
     }
 }
 
