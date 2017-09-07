@@ -16,7 +16,7 @@ namespace messy_inventory
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmInventory());
+            Application.Run(new FrmInventory());
         }
     }
 }

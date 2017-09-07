@@ -1,6 +1,6 @@
 ﻿namespace messy_inventory
 {
-    partial class frmInventory
+    partial class FrmInventory
     {
         /// <summary>
         /// Required designer variable.
@@ -110,7 +110,7 @@
             this.DgvInventory.Size = new System.Drawing.Size(716, 333);
             this.DgvInventory.TabIndex = 6;
             // 
-            // frmInventory
+            // FrmInventory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -122,7 +122,7 @@
             this.Controls.Add(this.CmdAddGame);
             this.Controls.Add(this.CmdShowInventory);
             this.Controls.Add(this.lblTitle);
-            this.Name = "frmInventory";
+            this.Name = "FrmInventory";
             this.Text = "Inventory Application";
             ((System.ComponentModel.ISupportInitialize)(this.DgvInventory)).EndInit();
             this.ResumeLayout(false);

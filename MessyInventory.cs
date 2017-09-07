@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace messy_inventory
 {
-    public partial class frmInventory : Form
+    public partial class FrmInventory : Form
     {
         // The following two lists are temporary until a proper database is established.
         public List<GameData> games = new List<GameData>
@@ -23,7 +23,7 @@ namespace messy_inventory
             // new Employee{Constructor params}, ...;
         };
 
-        public frmInventory()
+        public FrmInventory()
         {
             InitializeComponent();
         }
