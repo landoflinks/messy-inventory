@@ -13,12 +13,12 @@ namespace messy_inventory
     public partial class frmInventory : Form
     {
         // The following two lists are temporary until a proper database is established.
-        public static List<GameData> games = new List<GameData>
+        public List<GameData> games = new List<GameData>
         {
             // new GameData{Constructor params}, ...;
         };
 
-        public static List<Employee> employees = new List<Employee>
+        public List<Employee> employees = new List<Employee>
         {
             // new Employee{Constructor params}, ...;
         };
