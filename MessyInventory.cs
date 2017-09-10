@@ -38,5 +38,10 @@ namespace messy_inventory
             AddGame newGame = new AddGame();
             newGame.Show();
         }
+
+        private void DgvInventory_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

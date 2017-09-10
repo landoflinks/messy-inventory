@@ -109,6 +109,7 @@
             this.DgvInventory.Name = "DgvInventory";
             this.DgvInventory.Size = new System.Drawing.Size(716, 333);
             this.DgvInventory.TabIndex = 6;
+            this.DgvInventory.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvInventory_CellContentClick);
             // 
             // FrmInventory
             // 
