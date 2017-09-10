@@ -24,6 +24,7 @@ namespace messy_inventory
 
         private void CmbSubmit_Click(object sender, EventArgs e)
         {
+            // Submits new employee.
             int employeeNum;
             string first;
             string last;

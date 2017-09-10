@@ -109,13 +109,12 @@
             this.DgvInventory.Name = "DgvInventory";
             this.DgvInventory.Size = new System.Drawing.Size(716, 333);
             this.DgvInventory.TabIndex = 6;
-            this.DgvInventory.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvInventory_CellContentClick);
             // 
             // FrmInventory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(740, 481);
+            this.ClientSize = new System.Drawing.Size(740, 493);
             this.Controls.Add(this.DgvInventory);
             this.Controls.Add(this.lblEditDescr);
             this.Controls.Add(this.CmdEmployeeList);

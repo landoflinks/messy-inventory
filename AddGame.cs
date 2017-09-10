@@ -19,6 +19,7 @@ namespace messy_inventory
 
         private void CmbSubmit_Click(object sender, EventArgs e)
         {
+            // Submits data
             string title;
             string console;
             string developer;
