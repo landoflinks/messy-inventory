@@ -12,17 +12,6 @@ namespace messy_inventory
 {
     public partial class FrmInventory : Form
     {
-        // The following two lists are temporary until a proper database is established.
-        public List<GameData> games = new List<GameData>
-        {
-            // new GameData{Constructor params}, ...;
-        };
-
-        public List<Employee> employees = new List<Employee>
-        {
-            // new Employee{Constructor params}, ...;
-        };
-
         public FrmInventory()
         {
             InitializeComponent();
