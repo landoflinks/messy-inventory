@@ -105,9 +105,7 @@ namespace messy_inventory
                      MessageBoxButtons.OK, MessageBoxIcon.Stop);
             };
 
-            MessageBox.Show("Employee #: " + Convert.ToString(employeeNum) + " First Name: " + first +
-               " Last Name: " + last + " Birthday: " + birthday +
-               " Position: " + position + " Specialty: " + specialty + " Active: " + active, "Test Submit");
+            Close();
         }
     }
 }
