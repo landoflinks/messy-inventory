@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 using System.Windows.Forms;
 
 namespace messy_inventory
@@ -85,6 +86,17 @@ namespace messy_inventory
             {
                 Employee newEmployee = new Employee(employeeNum, first, last, birthday, position, specialty);
             }
+
+            // Save employee data to file
+            try
+            {
+                StreamWriter writeEmployee = new StreamWriter("employees");
+            }
+            catch
+            {
+                MessageBox.Show("The employee file could not be accessed.", "Error",
+                     MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            };
 
             MessageBox.Show("Employee #: " + Convert.ToString(employeeNum) + " First Name: " + first +
                " Last Name: " + last + " Birthday: " + birthday +
