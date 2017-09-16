@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 using System.Windows.Forms;
 
 namespace messy_inventory
@@ -26,7 +27,18 @@ namespace messy_inventory
         private void CmbEmployeeList_Click(object sender, EventArgs e)
         {
             // Lists current employees and their positions in a pop-up.
-            MessageBox.Show("This button currently lists nothing.", "Another Test Message");
+            if (File.Exists("employees.txt"))
+            {
+                try
+                {
+
+                }
+                catch
+                {
+                    MessageBox.Show("The employee.txt file could not be found.", "No File Found",
+                        MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                }
+            }
         }
 
         private void CmdAddEmployee_Click(object sender, EventArgs e)
