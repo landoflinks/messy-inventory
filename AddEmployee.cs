@@ -32,6 +32,7 @@ namespace messy_inventory
             string birthday;
             string position;
             string specialty;
+            string rowData;
             bool active;
 
             employeeNum = int.Parse(TxtEmployeeNum.Text);
@@ -87,10 +88,16 @@ namespace messy_inventory
                 Employee newEmployee = new Employee(employeeNum, first, last, birthday, position, specialty);
             }
 
+            rowData = "Employee #: " + Convert.ToString(employeeNum) + ", First Name: " + first +
+               ", Last Name: " + last + ", Birthday: " + birthday +
+               ", Position: " + position + ", Specialty: " + specialty + ", Active: " + active ;
+
             // Save employee data to file
             try
             {
-                StreamWriter writeEmployee = new StreamWriter("employees");
+                StreamWriter writeFile = new StreamWriter("employees");
+                writeFile.WriteLine(rowData);
+                writeFile.Close();
             }
             catch
             {
