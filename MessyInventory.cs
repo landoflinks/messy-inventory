@@ -33,10 +33,10 @@ namespace messy_inventory
             {
                 try
                 {
-                    StreamReader employeeFile = new StreamReader("employees.txt");
+                    StreamReader employeeFile = new StreamReader("employees");
                     while ((fileLine = employeeFile.ReadLine()) != null)
                     {
-                        //employeeList = fileLine + "\n";
+                        LstBoxEmployees.Items.Add(fileLine);
                     }
                     employeeFile.Close();
                 }

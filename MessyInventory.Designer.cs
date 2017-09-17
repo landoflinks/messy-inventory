@@ -34,6 +34,7 @@
             this.CmdEmployeeList = new System.Windows.Forms.Button();
             this.lblEditDescr = new System.Windows.Forms.Label();
             this.DgvInventory = new System.Windows.Forms.DataGridView();
+            this.LstBoxEmployees = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.DgvInventory)).BeginInit();
             this.SuspendLayout();
             // 
@@ -98,11 +99,20 @@
             this.DgvInventory.Size = new System.Drawing.Size(716, 296);
             this.DgvInventory.TabIndex = 6;
             // 
+            // LstBoxEmployees
+            // 
+            this.LstBoxEmployees.FormattingEnabled = true;
+            this.LstBoxEmployees.Location = new System.Drawing.Point(490, 13);
+            this.LstBoxEmployees.Name = "LstBoxEmployees";
+            this.LstBoxEmployees.Size = new System.Drawing.Size(238, 147);
+            this.LstBoxEmployees.TabIndex = 7;
+            // 
             // FrmInventory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(740, 493);
+            this.Controls.Add(this.LstBoxEmployees);
             this.Controls.Add(this.DgvInventory);
             this.Controls.Add(this.lblEditDescr);
             this.Controls.Add(this.CmdEmployeeList);
@@ -125,6 +135,7 @@
         private System.Windows.Forms.Button CmdEmployeeList;
         private System.Windows.Forms.Label lblEditDescr;
         private System.Windows.Forms.DataGridView DgvInventory;
+        private System.Windows.Forms.ListBox LstBoxEmployees;
     }
 }
 
