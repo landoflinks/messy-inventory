@@ -26,12 +26,19 @@ namespace messy_inventory
 
         private void CmbEmployeeList_Click(object sender, EventArgs e)
         {
-            // Lists current employees and their positions in a pop-up.
+            // Lists current employees and their positions in listbox.
+            string fileLine;
+
             if (File.Exists("employees.txt"))
             {
                 try
                 {
-
+                    StreamReader employeeFile = new StreamReader("employees.txt");
+                    while ((fileLine = employeeFile.ReadLine()) != null)
+                    {
+                        //employeeList = fileLine + "\n";
+                    }
+                    employeeFile.Close();
                 }
                 catch
                 {
