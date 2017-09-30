@@ -88,9 +88,9 @@ namespace messy_inventory
                 Employee newEmployee = new Employee(employeeNum, first, last, birthday, position, specialty);
             }
 
-            rowData = "Employee #: " + Convert.ToString(employeeNum) + ", First Name: " + first +
-               ", Last Name: " + last + ", Birthday: " + birthday +
-               ", Position: " + position + ", Specialty: " + specialty + ", Active: " + active ;
+            rowData = Convert.ToString(employeeNum) + ", " + first +
+               ", " + last + ", " + birthday + ", " + position + 
+               ", " + specialty + ", " + active ;
 
             // Save employee data to file
             try
