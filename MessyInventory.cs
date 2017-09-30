@@ -29,11 +29,13 @@ namespace messy_inventory
             // Lists current employees and their positions in listbox.
             string fileLine;
 
+            LstBoxEmployees.Items.Clear();
+
             if (File.Exists("employees.txt"))
             {
                 try
                 {
-                    StreamReader employeeFile = new StreamReader("employees");
+                    StreamReader employeeFile = new StreamReader("employees.txt");
                     while ((fileLine = employeeFile.ReadLine()) != null)
                     {
                         LstBoxEmployees.Items.Add(fileLine);
@@ -42,7 +44,7 @@ namespace messy_inventory
                 }
                 catch
                 {
-                    MessageBox.Show("The employee.txt file could not be found.", "No File Found",
+                    MessageBox.Show("The employees.txt file could not be found.", "No File Found",
                         MessageBoxButtons.OK, MessageBoxIcon.Stop);
                 }
             }

@@ -95,7 +95,7 @@ namespace messy_inventory
             // Save employee data to file
             try
             {
-                StreamWriter writeFile = new StreamWriter("employees");
+                StreamWriter writeFile = new StreamWriter("employees.txt");
                 writeFile.WriteLine(rowData);
                 writeFile.Close();
             }
