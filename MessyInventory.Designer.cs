@@ -61,7 +61,7 @@
             // CmdAddEmployee
             // 
             this.CmdAddEmployee.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.CmdAddEmployee.Location = new System.Drawing.Point(12, 67);
+            this.CmdAddEmployee.Location = new System.Drawing.Point(12, 76);
             this.CmdAddEmployee.Name = "CmdAddEmployee";
             this.CmdAddEmployee.Size = new System.Drawing.Size(131, 34);
             this.CmdAddEmployee.TabIndex = 3;
@@ -72,7 +72,7 @@
             // CmdEmployeeList
             // 
             this.CmdEmployeeList.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CmdEmployeeList.Location = new System.Drawing.Point(300, 67);
+            this.CmdEmployeeList.Location = new System.Drawing.Point(320, 67);
             this.CmdEmployeeList.Name = "CmdEmployeeList";
             this.CmdEmployeeList.Size = new System.Drawing.Size(144, 34);
             this.CmdEmployeeList.TabIndex = 4;
@@ -91,9 +91,9 @@
             // LstBoxEmployees
             // 
             this.LstBoxEmployees.FormattingEnabled = true;
-            this.LstBoxEmployees.Location = new System.Drawing.Point(490, 13);
+            this.LstBoxEmployees.Location = new System.Drawing.Point(483, 13);
             this.LstBoxEmployees.Name = "LstBoxEmployees";
-            this.LstBoxEmployees.Size = new System.Drawing.Size(238, 147);
+            this.LstBoxEmployees.Size = new System.Drawing.Size(245, 147);
             this.LstBoxEmployees.TabIndex = 7;
             // 
             // FrmInventory
