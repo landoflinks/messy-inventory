@@ -16,6 +16,7 @@ namespace messy_inventory
         private string specialty;
         private bool active;
 
+        // Default constructor
         public Employee()
         {
             employeeNum = 0;
@@ -27,6 +28,7 @@ namespace messy_inventory
             active = true;
         }
 
+        // Other possible constructors
         public Employee(string firstName, string lastName, string dayOfBirth)
         {
             first = firstName;
@@ -53,6 +55,7 @@ namespace messy_inventory
             specialty = expert;
         }
 
+        // getters and setters
         public int EmployeeNum { get; set; }
         public string First { get; set; }
         public string Last { get; set; }
