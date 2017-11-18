@@ -11,6 +11,7 @@ namespace messy_inventory
         private string condition;
         private float price;
 
+        // Default constructor
         public GameData()
         {
             title = "";
@@ -21,6 +22,7 @@ namespace messy_inventory
             price = 0.00F;
         }
 
+        // Other possible constructors
         public GameData(string gameTitle, string gameConsole)
         {
             title = gameTitle;
@@ -45,5 +47,13 @@ namespace messy_inventory
             condition = gameCondition;
             price = gamePrice;
         }
+
+        // Getters and setters
+        public string Title { get; set; }
+        public string Console { get; set; }
+        public string Developer { get; set; }
+        public string Publisher { get; set; }
+        public string Condition { get; set; }
+        public float Price { get; set; }
     }
 }
